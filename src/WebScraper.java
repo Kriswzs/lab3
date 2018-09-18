@@ -14,7 +14,7 @@ public class WebScraper {
             return contents;
         }
         public static void main(String[] unused) {
-            String[] text = urlToString(unused[]);
+            String[] text = urlToString(unused);
             String[] newarray = text.split("\\A");
             int count = 0;
             for (int i = 0; i < newarray.length; i++) {
