@@ -2,7 +2,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.Scanner;
 public class WebScraper {
-    public static void main(String[] unused) {
         public static String urlToString(final String url) {
             Scanner urlScanner;
             try {
@@ -14,6 +13,15 @@ public class WebScraper {
             urlScanner.close();
             return contents;
         }
-
+        public static void main(String[] unused) {
+            String[] text = urlToString(unused[]);
+            String[] newarray = text.split("\\A");
+            int count = 0;
+            for (int i = 0; i < newarray.length; i++) {
+               if (newarray[i] != ' ') {
+                count = count + 1;
+            }
+        }
+            System.out.println(count);
     }
 }
